@@ -5,7 +5,7 @@ class matrix:
         self.size = size
         self.array = array
     def add_row(self,row):
-        if len(row) != self.size:
+        if len(row) != self.size or len(self.array) == self.size:
             raise ValueError
         else:
             self.array.append(row)
